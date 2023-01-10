@@ -1,8 +1,9 @@
-const animalcrossing = `http://acnhapi.com/v1/villagers/`;
+const villagername = `Cyrano`
+const URL = `http://acnhapi.com/v1/villagers/${villagername}`;
 
-async function getData(animalcrossing) {
+async function getData(URL) {
   try {
-    const response = await fetch(animalcrossing);
+    const response = await fetch(URL);
     if (response.status < 200 || response.status > 299) {
       throw new Error(response);
     } else {
