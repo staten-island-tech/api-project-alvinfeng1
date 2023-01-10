@@ -1,3 +1,8 @@
-h2{
+.card{
     text-align: center;
+    align-items: center;
+}
+
+.villagername {
+    text size: 20px;
 }
