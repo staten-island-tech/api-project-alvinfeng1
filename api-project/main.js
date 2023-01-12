@@ -8,13 +8,16 @@ async function getData(villagers) {
       throw new Error(response);
     } else {
       const data = await response.json(); //makes the data in a JSON object we can use
-      data = JSON.parse(data);
       console.log(data);
-      data.forEach((name) => {
+      data.forEach((Object) => {
         document.getElementById("api-reponse").insertAdjacentElement(
           "afterbegin",
-          `<div class="card"> <h2 class="villagername">${name.name - USen}</h2>
-             img src="${image.jpg.large_image_url}" alt="" /></div>`
+          `<div class="card"> <h2 class="villagername">${
+            Object.name.name - USen
+          }</h2>
+             img class="image" src="${
+               Object.image.jpg.large_image_url
+             }"/></div>`
         );
       });
       console.log("good");
