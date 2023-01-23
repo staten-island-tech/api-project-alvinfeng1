@@ -7,12 +7,12 @@ async function getData(amiibo) {
       throw new Error(response);
     } else {
       const data = await response.json(); //makes the data in a JSON object we can use
-      console.log(amiibo);
-      data.forEach((amiibo) => {
+      console.log(data);
+      data.forEach((data) => {
         document.getElementById("api-reponse").insertAdjacentElement(
           "beforeend",
-          `<div class="card"> <h2 class="amiibo">${amiibo.name}</h2>
-             img class="image" src="${amiibo.image}"/></div>`
+          `<div class="card"> <h2 class="amiibo">${data.amiibo.name}</h2>
+             img class="image" src="${data.amiibo.image}"/></div>`
         );
       });
       console.log("good");
