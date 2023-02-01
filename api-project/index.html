@@ -11,20 +11,16 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Api Project</title>
   </head>
   <body>
-    <h1>Api-Project</h1>
-    <div class="filter-btns">
-      <button id="Super Smash Bros" class="filter-btn" data-amiiboSeries="Super Smash Bros">Super Smash Bros</button>
-      <button id="Splatoon" class="filter-btn" data-amiiboSeries="Splatoon">Splatoon</button>
-      <button id="Super Mario" class="filter-btn" data-amiiboSeries="Super Mario">Super Mario</button>
-      <button id="Animal Crossing" class="filter-btn" data-amiiboSeries="Animal Crossing">Animal Crossing</button>
-      <button id="All series" class="filter-btn" data-amiiboSeries="series">All series</button>
-    </div>
+    <h1>Amiibo Search</h1>
     <div class="search-container">
-      <input type="text" class="search-bar" placeholder="Search Amiibos...">
-      <button class="search-btn">Search</button>
+      <form action="search">
+        <label id="searchLabel" for="search">enter text</label>
+        <input type="text" class="search-bar" placeholder="Search Amiibos..." />
+        <button class="search-btn">Search</button>
+      </form>
     </div>
     <div class="container"></div>
     <script src="index.js"></script>

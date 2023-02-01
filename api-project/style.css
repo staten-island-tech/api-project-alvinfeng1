@@ -32,18 +32,6 @@ p {
   font-size: 14px;
   margin: 5px 0;
 }
-.filter-btns {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-.filter-btn {
-  background-color: #ccc;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 0 10px;
-}
 .search-container {
   display: flex;
   justify-content: center;
