@@ -15,13 +15,18 @@
   </head>
   <body>
     <h1>Api-Project</h1>
-    <div class="form-container">
-      <form class="form">
-        <input id="search" type="text" class="input" placeholder="search..." />
-        <button id="clear" class="clear-results">clear</button>
-      </form>
+    <div class="filter-btns">
+      <button id="Super Smash Bros" class="filter-btn" data-amiiboSeries="Super Smash Bros">Super Smash Bros</button>
+      <button id="Splatoon" class="filter-btn" data-amiiboSeries="Splatoon">Splatoon</button>
+      <button id="Super Mario" class="filter-btn" data-amiiboSeries="Super Mario">Super Mario</button>
+      <button id="Animal Crossing" class="filter-btn" data-amiiboSeries="Animal Crossing">Animal Crossing</button>
+      <button id="All series" class="filter-btn" data-amiiboSeries="series">All series</button>
     </div>
-    <h2 id="api-response"></h2>
-    <script src="main.js"></script>
+    <div class="search-container">
+      <input type="text" class="search-bar" placeholder="Search Amiibos...">
+      <button class="search-btn">Search</button>
+    </div>
+    <div class="container"></div>
+    <script src="index.js"></script>
   </body>
 </html>

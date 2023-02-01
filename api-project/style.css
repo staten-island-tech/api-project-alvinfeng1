@@ -1,24 +1,64 @@
 body, 
 html,
 * {
-  align-items: center;
-  justify-content: center;
-  font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
-  flex-direction: column; 
-  background-color: dodgerblue;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: rgb(98, 169, 240);
 }
 
-h1 {
-
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
-.card{
-    text-align: center;
-    align-items: center;
+.card {
+  width: 20%;
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  border: 5px solid rgb(48, 101, 215);
+  border-radius: 5px;
 }
-
-.amiibo {
-    text size: 20px;
+img {
+  width: 40%;
+  margin: 0 auto;
+  display: block;
 }
-
+h2 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+.filter-btns {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.filter-btn {
+  background-color: #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.search-bar {
+  width: 50%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.search-btn {
+  background-color: #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
