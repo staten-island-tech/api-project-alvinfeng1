@@ -24,8 +24,8 @@ async function getAmiibos() {
       const card = container.insertAdjacentHTML(
         "beforeend",
         `<div class="card">
-          <img src="${imageUrl}" alt="" >
-          <h2>${name}</h2>
+          <img src="${imageUrl}" alt="${name}" >
+          <h2> ${name}</h2>
           <p>Game Series: ${gameSeries}</p>
           <p>Release Date: ${release}</p>
           </div>
